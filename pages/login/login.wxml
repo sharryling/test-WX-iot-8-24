@@ -1,20 +1,17 @@
-<!--pages/login/login.wxml-->
+<!-- pages/login/login.wxml -->
 <view class='iconTop'>
-<image src='../../src/images/128.png' mode='widthFix'></image>
+    <image src='../../src/images/128.png' mode='widthFix'></image>
 </view>
-
 <view>
-<view class='inputView'>
-登录账号：
-<input class='inputBox' bindinput="userNameInput" placeholder="{{userName}}"></input>
+    <view class='inputView'>
+        账号：
+        <input class='inputBox' bindinput="userNameInput" placeholder="{{userName}}"></input>
+    </view>
+    <view class='inputView'>
+        密码：
+        <input class='inputBox' bindinput="userPWInput" placeholder="{{userPW}}"></input>
+    </view>
+    <view>
+        <button class="weui-btn" bindtap="login">登录</button>
+    </view>
 </view>
-<view class='inputView'>
-登录密码：
-<input class='inputBox' bindinput="userPWInput"  placeholder="{{userPW}}"></input>
-</view>
-<view> <button class="weui-btn" bindtap="login">登录</button> </view>
-</view> 
-<view  class='centerText' style='margin-bottom:100rpx;'>
-<text style='color:#189cf0;'>注册</text>
-</view>
-
